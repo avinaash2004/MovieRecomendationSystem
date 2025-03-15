@@ -1,0 +1,225 @@
+/* 🎬 General Styles */
+body {
+    background: linear-gradient(135deg, #1a1a40, #4a148c);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 🔍 Search Box */
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 12px;
+    width: 70%;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+.search-btn {
+    padding: 12px 18px;
+    background: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background: #e74c3c;
+}
+
+/* 🎬 Search History */
+.search-history {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+}
+
+.search-history h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.search-history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.search-history li {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* 🎬 Movie Display */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.movie-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie-info {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    transition: 0.3s;
+}
+
+.movie-card:hover .movie-info {
+    bottom: 10px;
+}
+
+/* 🎥 Get Similar Movies Button */
+.rec-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rec-btn:hover {
+    background: #2ecc71;
+}
+
+/* 🔥 Recommended Movies */
+.rec-heading {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.recommend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.recommend-movie {
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    border-radius: 15px;
+    color: white;
+}
+
+.recommend-movie:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+.recommend-movie img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.recommend-movie .rec-info {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    transition: 0.3s;
+}
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.nav-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.nav-btn:hover {
+    background-color: #0056b3;
+}
+
+.error-msg {
+    color: red;
+    font-weight: bold;
+}
+
+.info-msg {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.recommend-movie:hover .rec-info {
+    bottom: 10px;
+}
+
+/* 🎬 Error Messages */
+.error-msg {
+    color: red;
+    font-size: 1.2rem;
+}
